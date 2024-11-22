@@ -53,11 +53,13 @@
     {
       "group": "Manage events",
       "pages": [
-        "/manage-events/details",
         "/manage-events/orders",
-        "/manage-events/gift-tickets",
-        "/manage-events/gift-tickets"
-
+        "/manage-events/tiers",
+        "/manage-events/team",
+        "/manage-events/promo-codes",
+        "/manage-events/tracking-links",
+        "/manage-events/edit-event",
+        "/manage-events/edit-settings"
       ]
     },
   
