@@ -33,12 +33,12 @@
       "group": "Getting Started",
       "pages": [
         "/getting-started/registration-and-login",
-        "/getting-started/create-community",
+        "/getting-started/create-organization",
         "/getting-started/create-event"
       ]
     },
     {
-      "group": "Manage Communities",
+      "group": "Manage Organization",
       "pages": [
         "/manage-communities/overview",
         "/manage-communities/orders",
@@ -73,6 +73,6 @@
   ],
   "footerSocials": {
 
-    "instagram": "https://www.instagram.com/bubble"
+    "instagram": "https://www.instagram.com/bubbl.app"
   }
 }
