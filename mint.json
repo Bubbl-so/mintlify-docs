@@ -40,12 +40,14 @@
     {
       "group": "Manage Organization",
       "pages": [
-        "/manage-communities/overview",
-        "/manage-communities/orders",
-        "/manage-communities/customers",
-        "/manage-communities/finances",
-        "/manage-communities/marketing",
-        "/manage-communities/profile"
+        "/manage-organization/finish-setup",
+        "/manage-organization/finances-payouts",
+        "/manage-organization/overview",
+        "/manage-organization/orders",
+        "/manage-organization/customers",
+        "/manage-organization/marketing",
+        "/manage-organization/profile",
+        "/manage-organization/tap-to-pay"
 
 
       ]
@@ -73,6 +75,6 @@
   ],
   "footerSocials": {
 
-    "instagram": "https://www.instagram.com/bubbl.app"
+    "instagram": "https://www.instagram.com/bubble"
   }
 }
