@@ -48,33 +48,38 @@
         "/manage-organization/marketing",
         "/manage-organization/profile",
         "/manage-organization/tap-to-pay"
-
-
       ]
     },
     {
       "group": "Manage events",
       "pages": [
-        "/manage-events/orders",
-        "/manage-events/tiers",
-        "/manage-events/team",
-        "/manage-events/promo-codes",
-        "/manage-events/tracking-links",
         "/manage-events/edit-event",
-        "/manage-events/edit-settings"
+        "/manage-events/team",
+        "/manage-events/edit-settings",
+        "/manage-events/tickets",
+        "/manage-events/orders",
+        "/manage-events/stats",
+        "/manage-events/promoters-links",
+        "/manage-events/promo-codes",
+        "/manage-events/guest-list",
+        "/manage-events/scan",
+        "/manage-events/gift"
       ]
     },
   
     {
       "group": "Frequently Asked Questions",
       "pages": [
-        "/faq/what-is-bubbl"
+        "/faq/what-is-bubbl",
+        "/faq/refunds",
+        "/faq/notifications",
+        "/faq/my-tickets"
       ]
     } 
     
   ],
   "footerSocials": {
 
-    "instagram": "https://www.instagram.com/bubble"
+    "instagram": "https://www.instagram.com/bubbl.app"
   }
 }
