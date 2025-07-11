@@ -38,6 +38,16 @@
       ]
     },
     {
+      "group": "Frequently Asked Questions",
+      "pages": [
+        "/faq/what-is-bubbl",
+        "/faq/refunds",
+        "/faq/notifications",
+        "/faq/my-tickets"
+      ]
+    },
+    
+    {
       "group": "Manage Organization",
       "pages": [
         "/manage-organization/finish-setup",
@@ -50,6 +60,7 @@
         "/manage-organization/tap-to-pay"
       ]
     },
+    
     {
       "group": "Manage events",
       "pages": [
@@ -63,21 +74,9 @@
         "/manage-events/promo-codes",
         "/manage-events/guest-list",
         "/manage-events/scan",
-        "/manage-events/gift",
-        "/manage-events/chat",
-        "/manage-events/gallery"
+        "/manage-events/gift"
       ]
-    },
-  
-    {
-      "group": "Frequently Asked Questions",
-      "pages": [
-        "/faq/what-is-bubbl",
-        "/faq/refunds",
-        "/faq/notifications",
-        "/faq/my-tickets"
-      ]
-    } 
+    }
     
   ],
   "footerSocials": {
