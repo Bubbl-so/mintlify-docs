@@ -1,75 +1,112 @@
 ---
 title: "Tickets"
+description: "Create, customize, and control every aspect of your event’s ticketing — from general admission to high-end tables — with complete flexibility and precision."
 ---
 
-The **Ticket Tiers Management** page allows event organizers to create, edit, and manage ticket tiers for their events. This feature enables full customization of ticket options to suit different pricing strategies and audience preferences. Below are the main features, including detailed instructions on how to create a new tier.
 
 <Tabs>
-  <Tab title="Web">
-    ## Features
+  <Tab title="Tickets">
+    ### Why Use Ticket Tiers?
 
-    ### Tier Details
+    Ticket tiers let you **offer different access levels, pricing, and packages** for your event. Whether it’s early bird, general admission, VIP, or hidden guest-only access — you have full control over what’s sold, when, and how.
 
-    - **Tier Title**: The name of the ticket tier (e.g., "Table", "Cheap", "VIP").
-    - **Price**: Displays the cost of a single ticket in each tier.
-    - **Tickets Sold**: Indicates the number of tickets sold out of the total available for that tier (e.g., `0 of 20`).
-    - **Status**:
-    - **Available**: Tickets in this tier are ready for sale.
-    - **Sold Out**: All tickets in this tier have been sold.
-    - Additional messages for sale status (e.g., "Sale not started yet") provide more context.
+    **How to Use: Ticket Tiers**
 
-    ### Actions
+    **Creating a Ticket Tier**
 
-    - **Edit Tier**: The **pencil icon** allows organizers to modify tier details, such as title, price, and ticket quantity.
-    - **Remove Tier**: The **trash icon** enables organizers to delete a tier entirely.
+    1. Go to **Manage Tickets** and click **“New Tier”**
+    2. Fill in the following:
 
-    ---
+    - **Tier Name:** What your customers will see (e.g., “Early Bird”, “VIP”, “Backstage”)
+    - **Price:** Set in your event’s currency (use **\$0** for free tickets)
+    - **Quantity:** Number of tickets available in this tier
+    - **Description:** Optional, used to explain access or benefits (e.g., “VIP includes 2 drinks”)
 
-    ## Creating a New Tier
+    #### Advanced Options (Click “More Settings”)
 
-    To create a new ticket tier, follow these steps:
+    - **Min/Max Purchases:** Limit how many tickets can be bought per order
+    - **Sales Start / End:** Schedule when tickets become visible and purchasable
+    - **Valid Until:** Expire tickets early (e.g., guest must enter before midnight)
+    - **Password Protected:** Only guests with a password can access this tier (great for private access or staff)
+    - **Requires Approval:** Approve each purchase manually (useful for selective entry)
+    - **App Exclusive:** Only visible to users in the **Bubbl app**, not on web (ideal for community drops)
+    - **Hide Tier:** Hide from customer view until you’re ready to go live
+    - **Mark as Sold Out:** Manually mark a tier as sold out (even if there’s quantity left)
+    - **Tap to Pay Settings (USA only):**
+      - **Sell Online:** Allow the tier to be sold on both app and web
+      - **Sell at the Door:** Allow the tier to be sold in-person using Tap to Pay
 
-    1. **Click the "New Tier" Button**: Located at the top-right corner of the page.
-    2. **Fill in the Tier Details**:
+      > If “Sell Online” is off, the ticket will only be visible at the door (not in advance)
 
-    - **Title (Required)**: Enter a name for the tier (e.g., "General Admission").
-    - **Price (Required)**: Set the ticket price. Use `$0` for free admission.
-    - **Available Quantity (Required)**: Specify the total number of tickets available for this tier.
-    - **Description**: Add a brief description (e.g., "This is a general admission ticket").
+    #### Linked Tiers
 
-    3. **Set Ticket Type and Purchase Limits**:
+    Use **Linked Tiers** to automate availability:
 
-    - **Min Purchases**: Set the minimum number of tickets a customer can purchase.
-    - **Max Purchases**: Set the maximum number of tickets a customer can purchase.
+    - When one tier sells out, another becomes available (e.g., Early Bird ➝ General Admission)
 
-    4. **Schedule Sales**:
+    ### Custom Questions & Terms
 
-    - **Sales Start**: Pick a date when the ticket sales should begin. Leave blank for immediate availability.
-    - **Sales End**: Pick a date when the ticket sales should end. Leave blank for the event’s end date.
+    Inside **Manage Tickets**, you can add:
 
-    5. **Advanced Options**:
+    - **Text Box Questions** (e.g., guest name, Instagram handle)
+    - **Checkboxes** for custom Terms & Conditions (e.g., “I agree to the no-refund policy”)
 
-    - **Hide Tier**: Toggle this on to make the tier invisible to customers until it's ready for sale.
-    - **Mark as Sold Out**: Manually mark the tier as sold out.
-    - **Requires Approval**: Toggle this on if you want to review and approve each purchase manually.
-    - **Password Protected**: Set this to require a password for customers to access this tier.
+    > These show up before checkout and responses are saved in each order.
 
-    6. **Save the Tier**:
+    ### Add Table Maps or Visuals
 
-    - Click the **Create Tier** button to save your new ticket tier.
+    Upload a **Table Map** or venue image that appears to customers while selecting tickets.\
+    Use this for:
 
-    ---
+    - Bottle service layouts
+    - Seating charts
+    - Area zones or entry instructions
 
-    ## Additional Functionalities
-
-    - **Real-Time Updates**: Changes to ticket tiers, such as pricing or availability, are reflected instantly.
-    - **Dynamic Status**: Ticket statuses update automatically as sales progress.
-
-    ---
-
-    ![Events tiers](/images/manage-events-tiers.png)
+    > ### Tips for Tickets
+    >
+    > - Set **“Valid Until”** if you want to reward early arrival (e.g., Ladies Free Before 11 PM)
+    > - Use **Password Protection **for influencer drops or early access
+    > - Use **Requires Approval** for exclusive entry events or events with dress code filtering
+    > - Add **Linked tiers** to automate sales flow (Early Bird ➝ GA ➝ VIP)
   </Tab>
-  <Tab title="App">
-    
+  <Tab title="Tables">
+    ### Why Use Tables?
+
+    Tables are for **bottle service or VIP reservations** and usually require manual approval. Bubbl lets you treat tables like premium ticket tiers — but with stricter controls.
+
+    ### How to Use: Table Tiers
+
+    - Go to **Manage Tickets \> Tables**
+
+    Click **New Tier** and configure just like a ticket, with some key differences:
+
+    - **Requires Approval** is **always enabled** for tables
+    - Use the **description** field to list inclusions (e.g., “Includes 2 bottles \+ 5 guests”)
+    - Tables can have **custom pricing**, availability windows, and names (e.g., “Main Stage Booth”)
+
+    > ### Tips for Tables
+    >
+    > - Include **bottle minimums** or guest limits in your tier name or description
+    > - Use **table maps** to show layout and drive higher conversion
+    > - Track approvals easily from the **Orders tab**, and contact guests if more info is needed
+    >
+    > How Tables Are Typically Used: Tables offer a lot of flexibility in how you set them up.
+    >
+    > Most organizers use one of these two strategies:
+    >
+    > - **Full Payment Upfront:**\
+    >   Set the table price (e.g., **\$1000**) and include **1 ticket** in the tier. Then, manually **send 9 gift tickets** to complete the 10-person table. This gives you full control over who gets access.
+    > - **Reservation Fee Model:**\
+    >   Some organizers charge just a **deposit or reservation fee** (usually around **10% of the total**) to secure the table. The remaining amount is collected at the venue.
+
+    ---
   </Tab>
 </Tabs>
+
+### Real-Time Updates
+
+All ticket and table tiers are:
+
+- Instantly updated in real time when edited
+- Synced across the app, web, and scanner tools
+- Automatically reflect sales status (Available, Sold Out, Not Started)
