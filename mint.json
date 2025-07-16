@@ -69,6 +69,7 @@
         "/manage-events/edit-settings",
         "/manage-events/tickets",
         "/manage-events/orders",
+        "/manage-events/issuing-refunds",
         "/manage-events/stats",
         "/manage-events/promoters-links",
         "/manage-events/promo-codes",
