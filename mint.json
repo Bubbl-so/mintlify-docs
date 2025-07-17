@@ -75,7 +75,8 @@
         "/manage-events/promo-codes",
         "/manage-events/guest-list",
         "/manage-events/scan",
-        "/manage-events/gift"
+        "/manage-events/gift",
+        "/manage-events/meta-pixel"
       ]
     }
     
