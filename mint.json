@@ -77,6 +77,12 @@
         "/manage-events/gift",
         "/manage-events/meta-pixel"
       ]
+    },
+    {
+      "group": "Bubbl Playbook",
+      "pages": [
+        "bubbl-playbook/success-event"
+      ]
     }
     
   ],
