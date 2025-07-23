@@ -55,10 +55,10 @@ _This token is tied to your Pixel, not to your user account._
 ## Events we are tracking
 
 1. **Page View:  **User visited an event page
-   - Properties: 
+   - Properties:
      - event_id: unique identifier of the event
      - event_visibility: "public" or "private"
-2. **View Content: **User viewed event details
+2. **View Content**: User viewed event details
    - Properties:
      - content_ids: [eventId]
      - content_type: "product"
@@ -72,14 +72,14 @@ _This token is tied to your Pixel, not to your user account._
      - currency: [EventCurrency]
      - event_id: unique identifier of the event
      - event_visibility: "public" or "private"
-4. **InitiateCheckout: **User started an order (clicked “Continue” or "Apple Pay")
+4. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
    - Properties:
      - num_items: Quantity of Tickets
      - value: Price of the ticket
      - currency: [EventCurrency]
      - event_id: unique identifier of the event
      - event_visibility: "public" or "private"
-5. **AddPaymentInfo: **User entered payment information (Completed Stripe Form)
+5. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
    - Properties:
      - payment_method: "card"
      - event_id: unique identifier of the event
