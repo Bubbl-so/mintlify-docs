@@ -52,45 +52,96 @@ _This token is tied to your Pixel, not to your user account._
   Make sure you're compliant with GDPR / CCPA and other privacy laws
 </Info>
 
-## Events we are tracking
+## Events we are tracking  
 
-1. **Page View:  **User visited an event page
-   - Properties:
-     - event_id: unique identifier of the event
-     - event_visibility: "public" or "private"
-2. **View Content**: User viewed event details
-   - Properties:
-     - content_ids: [eventId]
-     - content_type: "product"
-     - event_id: unique identifier of the event
-     - event_visibility: "public" or "private"
-3. **AddToCart: **User added a ticket to his cart (ticket tier selected, bottom sheet opened)
-   - Properties:
-     - content_ids: [ticketId]
-     - content_type: "product"
-     - value: Price of the ticket
-     - currency: [EventCurrency]
-     - event_id: unique identifier of the event
-     - event_visibility: "public" or "private"
-4. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
-   - Properties:
-     - num_items: Quantity of Tickets
-     - value: Price of the ticket
-     - currency: [EventCurrency]
-     - event_id: unique identifier of the event
-     - event_visibility: "public" or "private"
-5. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
-   - Properties:
-     - payment_method: "card"
-     - event_id: unique identifier of the event
-     - event_visibility: "public" or "private"
-6. **Purchase: **User completed a purchase and has a valid order
-   - Properties:
-     - content_ids: [ticketId]
-     - content_type: "product"
-     - value: Price of the ticket
-     - currency: [EventCurrency]
-     - num_items: Quantity of Tickets
-     - purchase_id: unique purchase identifier
-     - event_id: unique identifier of the event
-     - event_visibility: "public" or "private"
+<Tabs>
+  <Tab title="Meta Pixel">
+    1. **Page View:  **User visited an event page
+       - Properties:
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+    2. **View Content**: User viewed event details
+       - Properties:
+         - content_ids: [eventId]
+         - content_type: "product"
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+    3. **AddToCart: **User added a ticket to his cart (ticket tier selected, bottom sheet opened)
+       - Properties:
+         - content_ids: [ticketId]
+         - content_type: "product"
+         - value: Price of the ticket
+         - currency: [EventCurrency]
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+    4. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
+       - Properties:
+         - num_items: Quantity of Tickets
+         - value: Price of the ticket
+         - currency: [EventCurrency]
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+    5. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
+       - Properties:
+         - payment_method: "card"
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+    6. **Purchase: **User completed a purchase and has a valid order
+       - Properties:
+         - content_ids: [ticketId]
+         - content_type: "product"
+         - value: Price of the ticket
+         - currency: [EventCurrency]
+         - num_items: Quantity of Tickets
+         - purchase_id: unique purchase identifier
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+  </Tab>
+  <Tab title="Conversions API">
+    1. **Page View:  **User visited an event page
+       - Properties:
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+         - source: "web"
+    2. **View Content**: User viewed event details
+       - Properties:
+         - content_ids: [eventId
+         - content_type: "product"
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+         - source: "web"
+    3. **AddToCart: **User added a ticket to his cart (ticket tier selected, bottom sheet opened)
+       - Properties:
+         - content_ids: [ticketId]
+         - content_type: "product"
+         - value: Price of the ticket
+         - currency: "USD"
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+         - source: "web"
+    4. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
+       - Properties:
+         - num_items: Quantity of tickets
+         - value: Total value of cart
+         - currency: "USD"
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+         - source: "web"
+    5. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
+       - Properties:
+         - payment_method: "card"
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+         - source: "web"
+    6. **Purchase: **User completed a purchase and has a valid order
+       - Properties:
+         - content_ids: [ticketId]
+         - content_type: "product"
+         - value: Price of the ticket
+         - currency: [EventCurrency]
+         - num_items: Quantity of Tickets
+         - purchase_id: unique purchase identifier
+         - event_id: unique identifier of the event
+         - event_visibility: "public" or "private"
+  </Tab>
+</Tabs>
