@@ -3,11 +3,15 @@ title: "Meta Pixel & Conversions Integration with Bubbl"
 description: "Easily connect your Meta Pixel and Conversions API to track and optimize your event marketing. Setup takes less than 3 minutes."
 ---
 
-## Why Use Meta Pixel & Conversions API?
+## What is Meta Pixel and Why It Matters?
 
-- **Track Purchases** from Meta ads
-- **Improve Ad Targeting & Conversions**
-- **Measure Event Performance & ROI**
+The **Meta Pixel** is a tool from Meta that tracks what people do on your **Bubbl** pages—like **viewing**, **adding to cart**, or **buying**—so you can run **smarter**, **more targeted ads**.
+
+<Info>
+  - Track which ads drive sales, not just clicks.
+  - Find new buyers with lookalike audiences.
+  - Spend smarter by targeting people who are likely to convert.
+</Info>
 
 ## Where to Set It Up in Bubbl
 
@@ -16,6 +20,7 @@ description: "Easily connect your Meta Pixel and Conversions API to track and op
 3. Click **Settings** in the sidebar
 4. Scroll to the bottom of the page
 5. Enter your **Pixel ID** and **Conversions API Access Token**
+6. Hit **Save Changes **whenever you are done to save
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LqRcwZ7D7dg?si=1X78w64M-x8sW_fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
@@ -37,35 +42,32 @@ description: "Easily connect your Meta Pixel and Conversions API to track and op
 
 _This token is tied to your Pixel, not to your user account._
 
-## Test Your Setup
+## How It Works? 
 
-1. Go to Meta's **Event Testing Tool** in Events Manager
-2. Enter the URL or endpoint
-3. Confirm events are received
+Meta Pixels are set up in the Meta Business Console and connect to your Bubbl event.
 
-<Info>
-  Keep your **access token** secure
+Here’s how it works:
 
-  Regularly monitor Meta Events Manager for incoming data
+1. A customer visits your **event** or **organizer** page
+2. The Pixel tracks the visit and sends the data to Meta
+3. If they buy a ticket, that action is also reported to Meta
 
-  Make sure you're compliant with GDPR / CCPA and other privacy laws
-</Info>
+**Bubbl automatically tracks the following events:**
 
-## Events we are tracking
+<img
+  src="/images/WhatsAppImage2025-07-23at22.19.43.jpeg"
+  alt="WhatsApp Image 2025-07-23 at 22.19.43.jpeg"
+  title="WhatsApp Image 2025-07-23 at 22.19.43.jpeg"
+  style={{ width:"56%" }}
+/>
 
 <Tabs>
   <Tab title="Meta Pixel">
-    1. **Page View:**  User visited an event page
+    1. **PageView:**  User visited an event page
        - Properties:
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-    2. **View Content**: User viewed event details
-       - Properties:
-         - content_ids: [eventId]
-         - content_type: "product"
-         - event_id: unique identifier of the event
-         - event_visibility: "public" or "private"
-    3. **AddToCart:** User added a ticket to his cart (ticket tier selected, bottom sheet opened)
+    2. **AddToCart:** User added a ticket to his cart (ticket tier selected, bottom sheet opened)
        - Properties:
          - content_ids: [ticketId]
          - content_type: "product"
@@ -73,19 +75,19 @@ _This token is tied to your Pixel, not to your user account._
          - currency: [EventCurrency]
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-    4. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
+    3. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
        - Properties:
          - num_items: Quantity of Tickets
          - value: Price of the ticket
          - currency: [EventCurrency]
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-    5. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
+    4. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
        - Properties:
          - payment_method: "card"
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-    6. **Purchase:** User completed a purchase and has a valid order
+    5. **Purchase:** User completed a purchase and has a valid order
        - Properties:
          - content_ids: [ticketId]
          - content_type: "product"
@@ -97,19 +99,14 @@ _This token is tied to your Pixel, not to your user account._
          - event_visibility: "public" or "private"
   </Tab>
   <Tab title="Conversions API">
-    1. **Page View:**  User visited an event page
+    1. **ViewContent**: User viewed event details
        - Properties:
-         - event_id: unique identifier of the event
-         - event_visibility: "public" or "private"
-         - source: "web"
-    2. **View Content**: User viewed event details
-       - Properties:
-         - content_ids: [eventId
+         - content_ids: [eventId]
          - content_type: "product"
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-         - source: "web"
-    3. **AddToCart:** User added a ticket to his cart (ticket tier selected, bottom sheet opened)
+         - source: "web" or "ios"
+    2. **AddToCart:** User added a ticket to his cart (ticket tier selected, bottom sheet opened)
        - Properties:
          - content_ids: [ticketId]
          - content_type: "product"
@@ -117,22 +114,22 @@ _This token is tied to your Pixel, not to your user account._
          - currency: "USD"
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-         - source: "web"
-    4. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
+         - source: "web" or "ios"
+    3. **InitiateCheckout:** User started an order (clicked “Continue” or "Apple Pay")
        - Properties:
          - num_items: Quantity of tickets
          - value: Total value of cart
          - currency: "USD"
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-         - source: "web"
-    5. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
+         - source: "web" or "ios"
+    4. **AddPaymentInfo:** User entered payment information (Completed Stripe Form)
        - Properties:
          - payment_method: "card"
          - event_id: unique identifier of the event
          - event_visibility: "public" or "private"
-         - source: "web"
-    6. **Purchase:** User completed a purchase and has a valid order
+         - source: "web" or "ios"
+    5. **Purchase:** User completed a purchase and has a valid order
        - Properties:
          - content_ids: [ticketId]
          - content_type: "product"
