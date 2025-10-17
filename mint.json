@@ -56,7 +56,8 @@
         "/manage-organization/customers",
         "/manage-organization/marketing",
         "/manage-organization/profile",
-        "/manage-organization/tap-to-pay"
+        "/manage-organization/tap-to-pay",
+        "/manage-organization/memberships"
       ]
     },
     
