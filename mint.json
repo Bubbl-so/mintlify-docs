@@ -76,7 +76,8 @@
         "/manage-events/guest-list",
         "/manage-events/scan",
         "/manage-events/gift",
-        "/manage-events/meta-pixel"
+        "/manage-events/meta-pixel",
+        "/manage-events/cohost-permissions"
       ]
     },
     {
