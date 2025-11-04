@@ -55,7 +55,7 @@
         "/manage-organization/orders",
         "/manage-organization/customers",
         "/manage-organization/marketing",
-        
+        "/manage-organization/disputes",
         "/manage-organization/tap-to-pay",
         "/manage-organization/memberships"
       ]
