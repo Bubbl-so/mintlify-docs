@@ -15,6 +15,10 @@
       "to": "#FFFFFF"
     }
   },
+  "background": {
+    "color": "#000000"
+  }
+  ,
   "topbarLinks": [
     {
       "name": "Support",
