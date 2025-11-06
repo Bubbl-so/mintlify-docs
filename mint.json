@@ -16,7 +16,10 @@
     }
   },
   "background": {
-    "color": "#000000"
+    "color": {
+      "dark": "#000000",
+      "light": "#f2f2f2"
+    }
   }
   ,
   "topbarLinks": [
