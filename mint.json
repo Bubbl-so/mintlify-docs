@@ -30,6 +30,12 @@
   ],
   "navigation": [
     {
+      "group": "Welcome",
+      "pages": [
+        "/welcome/welcome"
+      ]
+    },
+    {
       "group": "Getting Started",
       "pages": [
         "/getting-started/registration-and-login",
