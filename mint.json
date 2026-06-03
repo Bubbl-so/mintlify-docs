@@ -47,7 +47,10 @@
       "pages": [
         "/getting-started/registration-and-login",
         "/getting-started/create-organization",
-        "/getting-started/create-event"
+        "/getting-started/create-event",
+        "/getting-started/registation-es",
+        "/getting-started/create-org-es",
+        "/getting-started/create-event-es"
       ]
     },
     {
